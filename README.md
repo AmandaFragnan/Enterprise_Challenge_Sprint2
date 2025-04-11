@@ -7,7 +7,7 @@
 
 <br>
 
-# FIAP Fase_6_Enterprise_Challenge_Sprint_2
+# FIAP Fase6_Enterprise_Challenge_Sprint2
 
 
 ## 👨‍🎓 Integrantes: 
