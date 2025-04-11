@@ -143,6 +143,7 @@ Erro percentual médio de 28,86%, sugerindo uma menor precisão na escala produt
 A validação cruzada com 5 folds evidenciou um ponto crítico: ambos os modelos apresentaram valores negativos de R² médio, com elevada dispersão nos scores individuais. Isso aponta para sérios problemas de generalização, provavelmente decorrentes de overfitting, baixa representatividade dos dados amostrais e desbalanceamentos temporais ou espaciais na base utilizada.
 
 ## 📌 Implicações Práticas e Limitações
+
 Os modelos desenvolvidos apresentam viabilidade inicial para a construção de sistemas preditivos de produtividade com uso de variáveis remotas (como NDVI) e estruturais (como área plantada ou colhida). No entanto, os resultados também deixam claro que tais modelos, em seu estado atual, não estão prontos para subsidiar decisões críticas no contexto da gestão agrícola, principalmente em escalas locais.
 
 As principais limitações encontradas ao longo do projeto não estão apenas relacionadas ao desempenho algorítmico, mas à qualidade, disponibilidade e granularidade dos dados. Uma das barreiras mais significativas observadas foi a dificuldade de acesso a dados agrícolas com recorte municipal e histórico consistente.
@@ -151,7 +152,8 @@ A maioria das bases públicas disponíveis concentra-se em níveis agregados por
 
 Apesar de o IBGE — por meio de iniciativas como o PAM (Produção Agrícola Municipal) e o LSPA (Levantamento Sistemático da Produção Agrícola) — se aproximar desse ideal, ambos os levantamentos apresentam lacunas importantes, como ausência de cruzamento entre culturas e municípios e deficiências na qualidade e estruturação dos dados. Isso limita fortemente a aplicação de modelos preditivos mais robustos em escala local, afetando não apenas a modelagem estatística, mas também a possibilidade de análises multivariadas e históricas com acurácia confiável.
 
-🔚 Encerramento
+## 🔚 Encerramento
+
 O presente estudo representa um primeiro passo em direção à modelagem inteligente da produção agrícola no Brasil, evidenciando tanto o potencial técnico da ciência de dados nesse domínio, quanto os desafios estruturais ainda existentes no acesso e padronização de informações agrícolas em nível municipal.
 
 Avançar nesse tipo de iniciativa requer investimento contínuo em dados abertos, interoperabilidade de sistemas e digitalização do campo — pilares fundamentais para uma agricultura mais sustentável, resiliente e orientada por dados.
