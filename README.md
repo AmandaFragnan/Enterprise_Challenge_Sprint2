@@ -7,14 +7,13 @@
 
 <br>
 
-# FIAP Fase2_Cap6 Python e Alem
+# FIAP Fase_6_Enterprise_Challenge_Sprint_2
 
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/amanda-fragnan-b61537255/" target="_blank">Amanda Fragnan RM 555684 </a>
 - <a href="https://www.linkedin.com/in/cunhaandre/" target="_blank">Andre Cunha RM 560648</a>
 - <a href="https://www.linkedin.com/in/gabriellehalasc/" target="_blank">Gabrielle Halasc RM 560147</a> 
-- <a href="https://www.linkedin.com/in/matheusconciani/" target="_blank">Matheus Conciani RM 559473</a> 
 
 ## 👩‍🏫 Professores:
 ### Tutor(a)
@@ -89,8 +88,7 @@ python main.py
 
 ## Historico de lançamentos
 
-- <b> 0.2.0 - 15/10/2024<b>
-- <b> 0.1.0 - 13/10/2024<b>
+- <b> 0.1.0 - 11/04/2025<b>
 
   
 ## 📋 Licença
