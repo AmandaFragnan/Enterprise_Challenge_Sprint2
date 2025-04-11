@@ -23,24 +23,24 @@
 
 ## 📜 Descrição
 
-Projeto: Sistema de Gerenciamento de Pequenas Propriedades Rurais
+Projeto: Predição de Produtividade Agrícola com Modelos de Regressão
 
-* Objetivo Geral
-O objetivo principal deste projeto é desenvolver um sistema que permita aos pequenos produtores rurais gerenciarem de maneira eficiente seus cultivos de frutas e verduras. A solução visa auxiliar na redução de custos e melhorar a rentabilidade, otimizando o uso de insumos, planejamento de safra e comercialização.
+• Objetivo Geral
+Este projeto tem como objetivo prever a produtividade agrícola de São José do Rio Preto com base em variáveis ambientais e históricas, como NDVI médio (índice de vegetação) e área colhida. A proposta visa fornecer um modelo preditivo que auxilie na análise de safras e na tomada de decisão no setor agrícola
 
-* Funcionalidades da Solução
-  
-1. Gestão de Insumos e Custo de Produção: Monitoramento de Insumos: O sistema permitirá o monitoramento detalhado do uso de fertilizantes, pesticidas, entre outros.
+## ⚙️ Funcionalidades da Solução
 
-2. Cálculo de Custos: Será possível calcular o custo por área cultivada, proporcionando uma visão clara dos gastos envolvidos em cada etapa do cultivo.
+Processamento de Dados Ambientais e Agrícolas:
+Integração e transformação de dados históricos de área colhida, NDVI médio e produção de lavouras permanentes.
 
-3. Ferramenta de Planejamento: A solução incluirá uma ferramenta que auxilia no planejamento de quais frutas e verduras plantar, considerando as condições climáticas.
+Análise Exploratória Detalhada:
+Análise visual e estatística para identificação de tendências, outliers e correlações entre as variáveis envolvidas.
 
-4. Registro de Produção: Os produtores poderão registrar a quantidade colhida, facilitando o controle da produção.
+Modelagem Preditiva com IA:
+Implementação e comparação de modelos de Regressão Linear e Random Forest para previsão da produção agrícola.
 
-5. Análise de Lucro: Serão gerados relatórios detalhados sobre o lucro por área cultivada e a margem.
-
-6. Identificação de Oportunidades: Com esses relatórios, os produtores poderão identificar as áreas com maior potencial de ganho, permitindo uma tomada de decisão mais informada.
+Validação Cruzada:
+Aplicação de validação cruzada (5-fold) para verificar a robustez dos modelos e sua capacidade de generalização.
 
 Benefícios Esperados:
 
