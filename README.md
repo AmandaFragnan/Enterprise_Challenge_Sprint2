@@ -134,6 +134,10 @@ Random Forest	-0.034	Indica overfitting
 Regressão Linear	-0.221	Alta variância entre folds
 A dispersão elevada e os R² negativos apontam para problemas de generalização, possivelmente ligados ao tamanho reduzido da amostra e desequilíbrio temporal ou espacial.
 
+## Link para o vídeo do código funcionando
+
+https://youtu.be/sy6Xfz0BVBA
+
 ## ✅ Conclusão
 
 A Regressão Linear apresentou desempenho mais consistente frente ao modelo de Random Forest, conforme os resultados obtidos no conjunto de teste:
@@ -161,10 +165,6 @@ Apesar de o IBGE — por meio de iniciativas como o PAM (Produção Agrícola Mu
 O presente estudo representa um primeiro passo em direção à modelagem inteligente da produção agrícola no Brasil, evidenciando tanto o potencial técnico da ciência de dados nesse domínio, quanto os desafios estruturais ainda existentes no acesso e padronização de informações agrícolas em nível municipal.
 
 Avançar nesse tipo de iniciativa requer investimento contínuo em dados abertos, interoperabilidade de sistemas e digitalização do campo — pilares fundamentais para uma agricultura mais sustentável, resiliente e orientada por dados.
-
-## Link para o vídeo do código funcionando
-
-https://youtu.be/sy6Xfz0BVBA
 
 ## 📁 Estrutura de pastas
 
