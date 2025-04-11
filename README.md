@@ -4,7 +4,6 @@
 <p align="center">
 <a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
 </p>
-![image](https://github.com/user-attachments/assets/bc2eecae-09bf-463d-8469-c0fbaa588290)
 
 <br>
 
