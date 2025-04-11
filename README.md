@@ -25,57 +25,62 @@
 
 Projeto: Predição de Produtividade Agrícola com Modelos de Regressão
 
-• Objetivo Geral
-Este projeto tem como objetivo prever a produtividade agrícola de São José do Rio Preto com base em variáveis ambientais e históricas, como NDVI médio (índice de vegetação) e área colhida. A proposta visa fornecer um modelo preditivo que auxilie na análise de safras e na tomada de decisão no setor agrícola
+🎯 Objetivo Geral 
+
+O projeto tem como finalidade desenvolver modelos preditivos capazes de estimar a produtividade agrícola do município de São José do Rio Preto, utilizando variáveis ambientais e históricas, como o NDVI médio (Índice de Vegetação por Diferença Normalizada) e a área colhida. A iniciativa busca apoiar a análise de safras e subsidiar a tomada de decisões estratégicas no setor agrícola, com foco em previsibilidade e eficiência.
 
 ## ⚙️ Funcionalidades da Solução
 
-Processamento de Dados Ambientais e Agrícolas:
-Integração e transformação de dados históricos de área colhida, NDVI médio e produção de lavouras permanentes.
+🔄 Processamento de Dados Agrícolas e Ambientais
+Integração e tratamento de múltiplas fontes de dados, incluindo séries históricas de produção agrícola, NDVI médio e área colhida;
 
-Análise Exploratória Detalhada:
-Análise visual e estatística para identificação de tendências, outliers e correlações entre as variáveis envolvidas.
+Padronização de formatos, conversão de datas e agregações temporais por ano.
 
-Modelagem Preditiva com IA:
-Implementação e comparação de modelos de Regressão Linear e Random Forest para previsão da produção agrícola.
+📈 Análise Exploratória
+Realização de análises estatísticas e visuais para identificar tendências, outliers e relações entre as variáveis;
 
-Validação Cruzada:
-Aplicação de validação cruzada (5-fold) para verificar a robustez dos modelos e sua capacidade de generalização.
+Avaliação da correlação entre os indicadores e a variável-alvo (produção total).
+
+🧠 Modelagem Preditiva com Inteligência Artificial
+Implementação e comparação de dois algoritmos de regressão supervisionada: Regressão Linear e Random Forest Regressor;
+
+Aplicação de técnicas de validação cruzada (5-fold) para assegurar robustez, minimizar overfitting e garantir a generalização dos modelos.
 
 ## 📊 Documentação do Processo de Preparação dos Dados
 
-A preparação envolveu:
+A etapa de preparação de dados envolveu:
 
-Leitura de três conjuntos de dados (dados_hist.xlsx, satveg_planilha.xlsx, Area_Colhida_Lavouras_Permanentes.xlsx);
+Leitura e análise de três bases: dados_hist.xlsx, satveg_planilha.xlsx e Area_Colhida_Lavouras_Permanentes.xlsx;
 
-Conversão de datas e agregação por ano;
+Conversão e padronização de campos temporais, agregando os dados por ano;
 
-Cálculo do NDVI médio anual;
+Cálculo do NDVI médio anual por município;
 
-Soma da produção total de todas as lavouras permanentes;
+Consolidação da produção total de lavouras permanentes por período;
 
-Junção final entre os datasets com base no ano (Ano), formando o dataset df_final com 3 variáveis principais: NDVI_Medio, Area_Colhida e Total_Produzido.
+Junção das bases através da variável comum Ano, originando o dataset df_final, com as variáveis principais: NDVI_Medio, Area_Colhida e Total_Produzido.
 
 ## 📌 Justificativa da Escolha das Variáveis
 
-As variáveis selecionadas para a modelagem foram:
+As variáveis foram selecionadas com base na sua relevância agronômica e estatística:
 
-NDVI_Medio: Representa a densidade da vegetação e saúde das plantações.
+NDVI_Medio: Indicador remoto amplamente utilizado para representar a densidade e vigor da vegetação, sendo um reflexo direto da saúde das plantações.
 
-Area_Colhida: Indica o esforço produtivo em campo, refletindo capacidade de colheita.
+Area_Colhida: Reflete o esforço produtivo, estrutura e escala das operações agrícolas.
 
-Essas variáveis foram escolhidas por sua relevância direta na formação do volume total produzido e por apresentarem boa correlação com o alvo (Total_Produzido) na análise exploratória.
+Ambas mostraram forte correlação com a variável-alvo, Total_Produzido, durante a análise exploratória, justificando sua inclusão na modelagem.
 
 ## 🧠 Justificativa do Modelo e Lógica Preditiva
-Dois modelos supervisionados foram aplicados:
+
+Foram aplicados dois modelos supervisionados:
 
 Random Forest Regressor
-Modelo baseado em múltiplas árvores de decisão. Capaz de capturar relações não-lineares. Utilizado para avaliar a complexidade do problema.
+Modelo de aprendizado de máquina baseado em ensemble de árvores de decisão. Apresenta boa performance em problemas com relações não-lineares e variáveis interdependentes.
 
 Regressão Linear
-Modelo estatístico mais simples, útil para estabelecer uma base comparativa e interpretar diretamente os coeficientes preditivos.
+Modelo estatístico tradicional, escolhido como baseline. Permite interpretação direta dos coeficientes e facilita o entendimento das contribuições individuais das variáveis.
 
-Ambos os modelos foram treinados com divisão de dados 80/20 (treino/teste) e posteriormente avaliados por validação cruzada.
+Ambos foram treinados com divisão 80/20 (treino/teste) e avaliados com validação cruzada para melhor estimativa de desempenho.
 
 ## 🖼️ Prints das Análises Exploratórias
 
@@ -124,7 +129,7 @@ Erro Percentual Médio: 28,86%
 Gráfico Real vs Previsto:
 
 
-## 🔁 Validação Cruzada (5-fold)
+## 🔁 Validação Cruzada 
 Modelo	R² Médio	Observação
 Random Forest	-0.034	Indica overfitting
 Regressão Linear	-0.221	Alta variância entre folds
