@@ -162,6 +162,10 @@ O presente estudo representa um primeiro passo em direção à modelagem intelig
 
 Avançar nesse tipo de iniciativa requer investimento contínuo em dados abertos, interoperabilidade de sistemas e digitalização do campo — pilares fundamentais para uma agricultura mais sustentável, resiliente e orientada por dados.
 
+## Link para o vídeo do código funcionando
+
+https://youtu.be/sy6Xfz0BVBA
+
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
