@@ -124,13 +124,13 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>.gitignore</b>: Nesta pasta ficarão os  arquivos ou pastas devem ser ignorados pelo Git durante os commits
 
-- <b>PYTHON_E_ALEM</b>: aqui estão os arquivos com o codigo python e ajuste para conexão do banco em nuvem.
+- FiapEnterprise2.ipynb: Notebook Jupyter com a implementação principal do projeto, incluindo os códigos em Python e os ajustes necessários para conexão com o banco de dados na nuvem.
 
-- <b>requirements.txt</b>: Lista  com todas as dependências ou bibliotecas necessárias para que o projeto funcione corretamente.
+- LEIA-ME.md: Documento que funciona como um guia geral do projeto, apresentando seus objetivos, estrutura, funcionamento e instruções de uso. Este é o arquivo de leitura inicial para novos usuários.
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+- assets/NDVI_PNG_GRAFICO.png: Imagem gerada durante o projeto, localizada dentro da pasta assets, destinada a armazenar arquivos estáticos como gráficos, imagens ou ícones relacionados à visualização.
 
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+- Area_Colhida_Lavouras_Permanentes.xlsx, dados_hist.xlsx, satveg_planilha.xlsx: Planilhas com os dados históricos e atuais utilizados para análise e geração dos modelos e visualizações no projeto.
 
 ## 🔧 Como executar o código
 
