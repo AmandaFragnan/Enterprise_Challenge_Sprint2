@@ -138,7 +138,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 Primeiro, faça o clone deste repositório localmente usando o Git:
 
-git clone https://github.com/AmandaFragnan/FIAP_FASE2.git
+git clone https://github.com/AmandaFragnan/Enterprise_Challenge_Sprint2.git
 
 2. Instalar dependências
 
