@@ -84,10 +84,25 @@ Ambos os modelos foram treinados com divisão de dados 80/20 (treino/teste) e po
 ![NDVI_PNG_GRAFICO](https://github.com/user-attachments/assets/29525008-f985-4e27-b32b-e5efe12bb7a0)
 
 📈 NDVI vs Área Colhida
+
+![image](https://github.com/user-attachments/assets/a17f155c-e49c-4222-b97f-3b9068ddb10c)
  
 📉 Correlação NDVI x Produção Total
 
+![image](https://github.com/user-attachments/assets/f740d1a1-6672-4ba0-a2ce-b7bf94a0ce8e)
+
 📦 Boxplots
+
+![image](https://github.com/user-attachments/assets/002b0fd6-5918-4624-b43f-399068ea14f1)
+
+📉 Random Forest - Real vs Previsto
+
+![image](https://github.com/user-attachments/assets/cf938423-3048-416b-9574-054a0b7e414e)
+
+📉 Regressão Linear - Real vs Previsto
+
+![image](https://github.com/user-attachments/assets/ecd18dfb-5d0b-43a1-af30-465a3f87ef24)
+
 
 ## 📊 Justificativa Técnica e Métricas
 
