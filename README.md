@@ -132,8 +132,29 @@ A dispersão elevada e os R² negativos apontam para problemas de generalizaçã
 
 ## ✅ Conclusão
 
-A Regressão Linear apresentou desempenho mais consistente para este conjunto de dados limitado. Apesar da simplicidade, ela superou o Random Forest tanto em explicabilidade quanto em desempenho geral nos testes. Sugere-se aumentar a base de dados e considerar variáveis externas (precipitação, temperatura, solo) para futuras melhorias.
+A Regressão Linear apresentou desempenho mais consistente frente ao modelo de Random Forest, conforme os resultados obtidos no conjunto de teste:
 
+R² de 0.576, revelando que aproximadamente 57,6% da variância na produtividade agrícola pôde ser explicada pelas variáveis selecionadas.
+Erro percentual médio de 25,66%, indicando um desvio relativo moderado entre os valores previstos e observados.
+O modelo de Random Forest, apesar de sua natureza não paramétrica e capacidade de modelar relações não lineares, apresentou:
+
+R² de 0.463, com uma explicação menor da variabilidade dos dados.
+Erro percentual médio de 28,86%, sugerindo uma menor precisão na escala produtiva analisada.
+A validação cruzada com 5 folds evidenciou um ponto crítico: ambos os modelos apresentaram valores negativos de R² médio, com elevada dispersão nos scores individuais. Isso aponta para sérios problemas de generalização, provavelmente decorrentes de overfitting, baixa representatividade dos dados amostrais e desbalanceamentos temporais ou espaciais na base utilizada.
+
+## 📌 Implicações Práticas e Limitações
+Os modelos desenvolvidos apresentam viabilidade inicial para a construção de sistemas preditivos de produtividade com uso de variáveis remotas (como NDVI) e estruturais (como área plantada ou colhida). No entanto, os resultados também deixam claro que tais modelos, em seu estado atual, não estão prontos para subsidiar decisões críticas no contexto da gestão agrícola, principalmente em escalas locais.
+
+As principais limitações encontradas ao longo do projeto não estão apenas relacionadas ao desempenho algorítmico, mas à qualidade, disponibilidade e granularidade dos dados. Uma das barreiras mais significativas observadas foi a dificuldade de acesso a dados agrícolas com recorte municipal e histórico consistente.
+
+A maioria das bases públicas disponíveis concentra-se em níveis agregados por estado ou país, e normalmente segmenta os dados por tipo de cultura em relatórios e tabelas separadas, tornando inviável uma visão consolidada do volume produtivo de um determinado município ao longo do tempo.
+
+Apesar de o IBGE — por meio de iniciativas como o PAM (Produção Agrícola Municipal) e o LSPA (Levantamento Sistemático da Produção Agrícola) — se aproximar desse ideal, ambos os levantamentos apresentam lacunas importantes, como ausência de cruzamento entre culturas e municípios e deficiências na qualidade e estruturação dos dados. Isso limita fortemente a aplicação de modelos preditivos mais robustos em escala local, afetando não apenas a modelagem estatística, mas também a possibilidade de análises multivariadas e históricas com acurácia confiável.
+
+🔚 Encerramento
+O presente estudo representa um primeiro passo em direção à modelagem inteligente da produção agrícola no Brasil, evidenciando tanto o potencial técnico da ciência de dados nesse domínio, quanto os desafios estruturais ainda existentes no acesso e padronização de informações agrícolas em nível municipal.
+
+Avançar nesse tipo de iniciativa requer investimento contínuo em dados abertos, interoperabilidade de sistemas e digitalização do campo — pilares fundamentais para uma agricultura mais sustentável, resiliente e orientada por dados.
 
 ## 📁 Estrutura de pastas
 
