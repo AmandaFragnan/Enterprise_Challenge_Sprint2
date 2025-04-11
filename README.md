@@ -42,14 +42,80 @@ Implementação e comparação de modelos de Regressão Linear e Random Forest p
 Validação Cruzada:
 Aplicação de validação cruzada (5-fold) para verificar a robustez dos modelos e sua capacidade de generalização.
 
-Benefícios Esperados:
+## 📊 Documentação do Processo de Preparação dos Dados
 
-* Redução de Custos: Com o monitoramento eficiente dos insumos e custos de produção, os produtores poderão identificar e eliminar desperdícios, reduzindo os custos operacionais.
-* Melhoria na Rentabilidade: Através do planejamento de safra, os produtores poderão maximizar a rentabilidade de suas colheitas.
-* Tomada de Decisão Informada: Os relatórios de análise de lucro e rentabilidade fornecerão informações valiosas para a tomada de decisões estratégicas, ajudando os produtores a focar nas culturas mais lucrativas.
-* Sustentabilidade: O uso otimizado de insumos contribuirá para práticas agrícolas mais sustentáveis, beneficiando o meio ambiente e a comunidade local.
+A preparação envolveu:
 
-Este sistema de gerenciamento visa transformar a maneira como os pequenos produtores rurais administram suas propriedades, proporcionando ferramentas avançadas para melhorar a eficiência e a rentabilidade de suas operações agrícolas.
+Leitura de três conjuntos de dados (dados_hist.xlsx, satveg_planilha.xlsx, Area_Colhida_Lavouras_Permanentes.xlsx);
+
+Conversão de datas e agregação por ano;
+
+Cálculo do NDVI médio anual;
+
+Soma da produção total de todas as lavouras permanentes;
+
+Junção final entre os datasets com base no ano (Ano), formando o dataset df_final com 3 variáveis principais: NDVI_Medio, Area_Colhida e Total_Produzido.
+
+## 📌 Justificativa da Escolha das Variáveis
+
+As variáveis selecionadas para a modelagem foram:
+
+NDVI_Medio: Representa a densidade da vegetação e saúde das plantações.
+
+Area_Colhida: Indica o esforço produtivo em campo, refletindo capacidade de colheita.
+
+Essas variáveis foram escolhidas por sua relevância direta na formação do volume total produzido e por apresentarem boa correlação com o alvo (Total_Produzido) na análise exploratória.
+
+## 🧠 Justificativa do Modelo e Lógica Preditiva
+Dois modelos supervisionados foram aplicados:
+
+Random Forest Regressor
+Modelo baseado em múltiplas árvores de decisão. Capaz de capturar relações não-lineares. Utilizado para avaliar a complexidade do problema.
+
+Regressão Linear
+Modelo estatístico mais simples, útil para estabelecer uma base comparativa e interpretar diretamente os coeficientes preditivos.
+
+Ambos os modelos foram treinados com divisão de dados 80/20 (treino/teste) e posteriormente avaliados por validação cruzada.
+
+## 🖼️ Prints das Análises Exploratórias
+
+📌 Imagem NDVI
+
+📈 NDVI vs Área Colhida
+
+📉 Correlação NDVI x Produção Total
+
+📦 Boxplots
+
+## 📊 Justificativa Técnica e Métricas
+
+Regressão Linear
+R²: 0.576 → Explica 57,6% da variância da produção.
+
+MSE: Valor médio do erro quadrático.
+
+Erro Percentual Médio: 25,66%
+
+Gráfico Real vs Previsto:
+
+
+Random Forest
+R²: 0.463 → Explica 46,3% da variância.
+
+Erro Percentual Médio: 28,86%
+
+Gráfico Real vs Previsto:
+
+
+## 🔁 Validação Cruzada (5-fold)
+Modelo	R² Médio	Observação
+Random Forest	-0.034	Indica overfitting
+Regressão Linear	-0.221	Alta variância entre folds
+A dispersão elevada e os R² negativos apontam para problemas de generalização, possivelmente ligados ao tamanho reduzido da amostra e desequilíbrio temporal ou espacial.
+
+## ✅ Conclusão
+
+A Regressão Linear apresentou desempenho mais consistente para este conjunto de dados limitado. Apesar da simplicidade, ela superou o Random Forest tanto em explicabilidade quanto em desempenho geral nos testes. Sugere-se aumentar a base de dados e considerar variáveis externas (precipitação, temperatura, solo) para futuras melhorias.
 
 
 ## 📁 Estrutura de pastas
