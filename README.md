@@ -81,8 +81,10 @@ Ambos os modelos foram treinados com divisão de dados 80/20 (treino/teste) e po
 
 📌 Imagem NDVI
 
-📈 NDVI vs Área Colhida
+![NDVI_PNG_GRAFICO](https://github.com/user-attachments/assets/29525008-f985-4e27-b32b-e5efe12bb7a0)
 
+📈 NDVI vs Área Colhida
+ 
 📉 Correlação NDVI x Produção Total
 
 📦 Boxplots
