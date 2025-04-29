@@ -173,14 +173,11 @@ Certifique-se de ter todas as dependências instaladas. Se estiver usando Python
 pip install -r requirements.txt
 
 3. Executar o código
-   
-Dependendo da linguagem e estrutura do projeto, execute o código usando o comando apropriado. Para Python, por exemplo:
-
-python main.py
 
 ## Historico de lançamentos
 
 - <b> 0.1.0 - 11/04/2025<b>
+- <b> 0.2.0 - 29/04/2025<b>
 
   
 ## 📋 Licença
